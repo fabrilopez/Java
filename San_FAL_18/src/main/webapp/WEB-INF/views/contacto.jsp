@@ -38,12 +38,17 @@
 	<div class="titulo">
 		<h2>Informacion de contacto.</h2>
 		<div class="parrafo">
+		<p>
 			Contacto 1:
-			
+		</p>	
+		
+		<p>	
 			Contacto 2:
-			
+		</p>
+		
+		<p>	
 			Contacto 3:
-			
+		</p>	
 		</div>	
 	</div>
 </div>
