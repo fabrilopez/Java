@@ -1,0 +1,147 @@
+14/2/18
+-	Message "2 Spring AOP Marker at this line"
+I discovered how to disable these 'AOP markers'. Go to Window >> Preferences >> Spring >> Validation.
+On the "Project Builders" tab disable the "AOP Reference Model Builder".
+
+-	Depedencia agregada para eliminar el error de no encontrar las clases hibernate3
+	<dependency>
+    		<groupId>org.springframework</groupId>
+    		<artifactId>spring-orm</artifactId>
+    		<version>3.1.1.RELEASE</version>
+	</dependency>
+	<dependency>
+    		<groupId>org.springframework</groupId>
+    		<artifactId>spring-jdbc</artifactId>
+    		<version>3.1.1.RELEASE</version>
+		</dependency>
+		<dependency>
+    		<groupId>org.hibernate</groupId>
+    		<artifactId>hibernate-entitymanager</artifactId>
+    		<version>5.2.13.Final</version>
+		</dependency>
+		
+
+		
+	**************************
+		
+		<dependency>
+    		<groupId>org.hibernate</groupId>
+    		<artifactId>hibernate-entitymanager</artifactId>
+    		<version>5.2.13.Final</version>
+		</dependency>
+		
+		<dependency>
+	   		<groupId>org.hibernate</groupId>
+   			<artifactId>hibernate-annotations</artifactId>
+   			<version>3.4.0.GA</version>
+   			<scope>compile</scope>
+		</dependency>	
+		
+		<dependency>
+    		<groupId>org.hibernate.validator</groupId>
+    		<artifactId>hibernate-validator</artifactId>
+    		<version>6.0.7.Final</version>
+		</dependency>
+		
+		
+		***************+
+FROM spring-orm Maven POM.
+		
+	<dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-core</artifactId>
+      <version>3.6.0.Final</version>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-cglib-repack</artifactId>
+      <version>2.1_3</version>
+      <scope>test</scope>
+    </dependency>
+	<dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-annotations</artifactId>
+      <version>3.4.0.GA</version>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-entitymanager</artifactId>
+      <version>3.4.0.GA</version>
+      <optional>true</optional>
+    </dependency>
+		
+		
+		
+javax.persistence.Persistence.getPersistenceUtil()
+
+
+
+	
+	/*
+     * This method will list all existing especialidades.
+     */
+    @RequestMapping(value = { "/" }, method = RequestMethod.GET)
+    public String listEspecialidades(ModelMap model) {
+        List<Especialidad> especialidad = especialidadService.listEspecialidad();
+        model.addAttribute("especialidad", especialidad);
+        return "principal";
+    }
+	
+	
+	
+	public String listEspecialidades(Map<String,Object> map) {
+		//map.put("especialidadw Especialidad());
+		//map.put("especialidad_id", especialidad);
+		//map.put("nombre", );
+		return "especialidad";
+	}
+	
+	@RequestMapping(value = "/forms/principal.html", method = RequestMethod.POST)
+	public String addEspecialidad(@ModelAttribute("principal")
+								Especialidad especialidad,
+								BindingResult result,
+								@SuppressWarnings("rawtypes") Map model) {
+		
+		if (result.hasErrors()) {
+			System.out.println("Hay errores");
+			return "principal";
+		}
+		especialidad = (Especialidad) model.get("principal");
+		System.out.println("Metodo POST - PrincipalController");
+		
+		//especialidadService.addEspecialidad(especialidad);
+		return "redirect:principal.html";
+	}	
+		
+	@RequestMapping("/delete/{especialidad_id}")
+	public String deleteEspecialidad(@PathVariable("especialidad_id") long contact_id) {
+		especialidadService.removeEspecialidad(contact_id);
+		return "redirect:principal.html";
+	}
+
+
+https://github.com/jeslopcru/DemowebMSH/blob/master/README.md
+
+http://websystique.com/springmvc/spring-4-mvc-and-hibernate4-integration-example-using-annotations/
+
+https://www.tutorialspoint.com/hibernate/hibernate_criteria_queries.htm
+
+
+http://websystique.com/springmvc/spring-mvc-4-and-spring-security-4-integration-example/
+
+http://todosobreprogramacion.blogspot.com.ar/2013/11/spring-mvc-formularios-validator.html
+
+www.rockhoppertech.com/blog/spring-mvc-3-cascading-selects-using-jquery/
+
+
+Query:
+
+select profesional.profesional_id, profesional.nombre, profesional.apellido, especialidad.nombre
+from profesional
+inner join especialidad on profesional.especialidad_id = especialidad.especialidad_id;
+
+http://www.sanatorioargentino.com.ar/
+
+
