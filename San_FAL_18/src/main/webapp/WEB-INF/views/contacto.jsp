@@ -30,7 +30,7 @@
 			<li class="page_item "><a title="Quienes somos" href="/iua">Conozcanos</a></li>
 			<li class="page_item "><a title="Profesionales" href="/iua/forms/profesionales.html">Profesionales</a></li>
 			<li class="page_item inicio actual"><a title="Contacto" href="/iua/forms/contacto.html">Contacto</a></li>
-			<li class="page_item "><a title="Turnos" href="/iua/forms/loginform.html">Turnos</a></li>
+			<li class="page_item "><a title="Turnos" href="/iua/forms/turnos.html">Turnos</a></li>
 			<li class="page_item "><a title="Inicio de sesion" href="/iua/forms/loginform.html">Ingreso</a></li>
 		</ul>
 	</div>
