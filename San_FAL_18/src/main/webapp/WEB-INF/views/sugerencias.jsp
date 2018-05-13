@@ -4,7 +4,8 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 
-<!-- PAGINA DE INICIO -->
+
+<!-- PAGINA DE SUGERENCIAS -->
 
 <html>
 <head>
@@ -29,7 +30,7 @@
 		</div>
 		<ul id="nav">
 			<li class="page_item inicio actual"><a title="Inicio" href="/iua">Inicio</a></li>												
-			<li class="page_item "><a title="Quienes somos" href="/iua/forms/conozcanos.html">Conozcanos</a></li>
+			<li class="page_item "><a title="Quienes somos" href="/iua">Conozcanos</a></li>
 			<li class="page_item "><a title="Profesionales" href="/iua/forms/profesionales.html">Profesionales</a></li>
 			<li class="page_item "><a title="Contacto" href="/iua/forms/contacto.html">Contacto</a></li>
 			<li class="page_item "><a title="Turnos" href="/iua/forms/turnos.html">Turnos</a></li>
@@ -37,28 +38,60 @@
 		</ul>
 	</div>
 <div id="content">
-	<div class="titulo">
-		<h2>Bienvenidos al Sanatorio del Instituto Universitario Aeroautico.</h2>
-		<div class="parrafo">
-			<div id="cp_widget_b322dbbf-c3f0-479b-b870-315eb9092631">...</div>
-			<script type="text/javascript">
-			var cpo = []; 
-			cpo["_object"] ="cp_widget_b322dbbf-c3f0-479b-b870-315eb9092631"; 
-			cpo["_fid"] = "A0PAWLu2n796";
-			var _cpmp = _cpmp || []; 
-			_cpmp.push(cpo);
-			(function() { 
-				var cp = document.createElement("script"); 
-				cp.type = "text/javascript";
-				cp.async = true; cp.src = "//www.cincopa.com/media-platform/runtime/libasync.js";
-				var c = document.getElementsByTagName("script")[0];
-				c.parentNode.insertBefore(cp, c); })(); 
-			</script>
-			<h3>Nuestra Misión</h3>
-			En Sanatorio del IUA tenemos el compromiso de brindar un servicio de excelencia en la preservación de la 
-			salud de nuestros estudiantes y su familia, con principal énfasis en la mujer y el niño, en un contexto de maternidad centrada 
-			en la familia, ofreciendo un ambiente afectivo, agradable y cómodo, con una atención diferencial y especializada.
-		</div>	
+	<div class="titulo">	
+	<h3>Formulario de contacto</h3>
+	<p>Si tiene consultas o inquietudes por favor complete el siguiente formulario y nuestro personal responderá a la brevedad.</p>
+	<img width="150" height="150" src="<%=request.getContextPath()%>/resources/images/img09.jpg" hspace="5" vspace="5" style="float: right;" />
+	
+<form:form action="sugerencias.html" method="post" >
+<table>
+		<tr><td>NOMBRE</td><td>TELEFONO</td><td>EMAIL</td></tr>
+		<tr><td>
+		<label>
+		<input type="text" placeholder="Por favor escribe tu nombre" name="name" id="name" required autofocus>
+		</label>
+		<label> 
+ 		<input type="tel" placeholder="Porfavor especifica tu número de teléfono" name="telefono" id="telefono" required>
+ 		</label>
+		</td></tr>
+		
+		
+		<tr><td>
+		<label>
+		 <span>Nombre*:</span>
+		 <input type="text" placeholder="Por favor escribe tu nombre" name="name" id="name" required autofocus>
+		 </label>
+		</td></tr>
+
+		<tr><td>
+		<label>
+ 		<span>Teléfono*:</span> 
+ 		<input type="tel" placeholder="Porfavor especifica tu número de teléfono" name="telefono" id="telefono" required>
+ 		</label>
+ 		</td></tr>
+ 		
+ 		<tr><td>
+ 		<label>
+ 		<span>Email*:</span>
+ 		<input type="email" placeholder="tuemail@servidor.com" name="email" id="email" required>
+ 		</label>
+ 		</td></tr>
+ 
+ 		<tr><td>
+ 		<label>
+ 		<span>Mensaje:</span>
+ 		<textarea id="mensaje" name="mensaje" placeholder="Comienza a escribir..." style="height:200px"></textarea>
+ 		</label>
+ 		</td></tr>
+ 		
+ 		<tr><td>
+ 		<input class="sendButton" type="submit" name="Submit" value="Enviar">
+		</td></tr>
+         <tr><td colspan="2" align="center">		
+		<a href="/iua" class="button"><span>Home</span></a></td></tr>
+</table>
+</form:form>
+				
 	</div>
 </div>
 <div id ="footer">

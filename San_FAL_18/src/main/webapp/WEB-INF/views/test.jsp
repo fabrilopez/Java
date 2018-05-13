@@ -15,7 +15,7 @@
 <div id="header">
 		<div id="headerimg">
 			<a title="Sanatorio.com" href="/iua" >
-				<img width="172" height="114" alt="Sanatorio.com" src="/iua" border="0"></a>
+				<img width="180" height="90" src="<%=request.getContextPath()%>/resources/images/logosan.png" alt="Sanatorio.com" src="/iua" border="0"></a>
 		</div>
 		<div id="fecha">
 		<script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/fecha.js"></script>

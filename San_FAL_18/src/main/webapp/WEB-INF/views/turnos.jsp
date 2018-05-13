@@ -5,6 +5,8 @@
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
+<!-- PAGINA DE TURNOS -->
+
 <html>
 <head>
 	<title>Sanatorio IUA</title>	
@@ -16,7 +18,7 @@
 <div id="header">
 		<div id="headerimg">
 			<a title="Sanatorio.com" href="/iua" >
-				<img width="172" height="114" alt="Sanatorio.com" src="/iua" border="0"></a>
+				<img width="180" height="90" src="<%=request.getContextPath()%>/resources/images/logosan.png" alt="Sanatorio.com" src="/iua" border="0"></a>
 		</div>
 		<div id="fecha">
 		<script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/fecha.js"></script>			
@@ -28,7 +30,7 @@
 		</div>
 		<ul id="nav">
 			<li class="page_item "><a title="Inicio" href="/iua">Inicio</a></li>												
-			<li class="page_item "><a title="Quienes somos" href="/iua/">Conozcanos</a></li>
+			<li class="page_item "><a title="Quienes somos" href="/iua/forms/conozcanos.html">Conozcanos</a></li>
 			<li class="page_item "><a title="Profesionales" href="/iua/forms/profesionales.html">Profesionales</a></li>
 			<li class="page_item "><a title="Contacto" href="/iua/forms/contacto.html">Contacto</a></li>
 			<li class="page_item inicio actual"><a title="Turnos" href="/iua/forms/turnos.html">Turnos</a></li>

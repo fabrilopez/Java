@@ -4,7 +4,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 
-<!-- PAGINA DE INICIO -->
+<!-- PAGINA CONOZCANOS -->
 
 <html>
 <head>
@@ -28,8 +28,8 @@
 		</p>
 		</div>
 		<ul id="nav">
-			<li class="page_item inicio actual"><a title="Inicio" href="/iua">Inicio</a></li>												
-			<li class="page_item "><a title="Quienes somos" href="/iua/forms/conozcanos.html">Conozcanos</a></li>
+			<li class="page_item "><a title="Inicio" href="/iua">Inicio</a></li>												
+			<li class="page_item inicio actual"><a title="Quienes somos" href="/iua">Conozcanos</a></li>
 			<li class="page_item "><a title="Profesionales" href="/iua/forms/profesionales.html">Profesionales</a></li>
 			<li class="page_item "><a title="Contacto" href="/iua/forms/contacto.html">Contacto</a></li>
 			<li class="page_item "><a title="Turnos" href="/iua/forms/turnos.html">Turnos</a></li>
@@ -40,25 +40,33 @@
 	<div class="titulo">
 		<h2>Bienvenidos al Sanatorio del Instituto Universitario Aeroautico.</h2>
 		<div class="parrafo">
-			<div id="cp_widget_b322dbbf-c3f0-479b-b870-315eb9092631">...</div>
-			<script type="text/javascript">
-			var cpo = []; 
-			cpo["_object"] ="cp_widget_b322dbbf-c3f0-479b-b870-315eb9092631"; 
-			cpo["_fid"] = "A0PAWLu2n796";
-			var _cpmp = _cpmp || []; 
-			_cpmp.push(cpo);
-			(function() { 
-				var cp = document.createElement("script"); 
-				cp.type = "text/javascript";
-				cp.async = true; cp.src = "//www.cincopa.com/media-platform/runtime/libasync.js";
-				var c = document.getElementsByTagName("script")[0];
-				c.parentNode.insertBefore(cp, c); })(); 
-			</script>
-			<h3>Nuestra Misión</h3>
+			<h3>Historia</h3>
+			<img src="<%=request.getContextPath()%>/resources/images/hospitalviejo.jpg" hspace="5" vspace="5" style="float: right;" />
 			En Sanatorio del IUA tenemos el compromiso de brindar un servicio de excelencia en la preservación de la 
 			salud de nuestros estudiantes y su familia, con principal énfasis en la mujer y el niño, en un contexto de maternidad centrada 
 			en la familia, ofreciendo un ambiente afectivo, agradable y cómodo, con una atención diferencial y especializada.
-		</div>	
+		</div>
+		<div class="parrafo">
+			<h3>Nuestra Misión</h3>
+			<img width="170" height="170" src="<%=request.getContextPath()%>/resources/images/img06.jpg" hspace="5" vspace="5" style="float: left;" />
+			En Sanatorio del IUA tenemos el compromiso de brindar un servicio de excelencia en la preservación de la 
+			salud de nuestros estudiantes y su familia, con principal énfasis en la mujer y el niño, en un contexto de maternidad centrada 
+			en la familia, ofreciendo un ambiente afectivo, agradable y cómodo, con una atención diferencial y especializada.
+		</div>
+		<div class="parrafo">
+			<h3>Nuestra Vision</h3>
+			<img width="170" height="170" src="<%=request.getContextPath()%>/resources/images/img07.jpg" hspace="5" vspace="5" style="float: right;" />
+			En Sanatorio del IUA tenemos el compromiso de brindar un servicio de excelencia en la preservación de la 
+			salud de nuestros estudiantes y su familia, con principal énfasis en la mujer y el niño, en un contexto de maternidad centrada 
+			en la familia, ofreciendo un ambiente afectivo, agradable y cómodo, con una atención diferencial y especializada.
+		</div>
+		<div class="parrafo">
+			<h3>Nuestros valores</h3>
+			<img width="170" height="170" src="<%=request.getContextPath()%>/resources/images/img08.jpg" hspace="5" vspace="5" style="float: left;" />
+			En Sanatorio del IUA tenemos el compromiso de brindar un servicio de excelencia en la preservación de la 
+			salud de nuestros estudiantes y su familia, con principal énfasis en la mujer y el niño, en un contexto de maternidad centrada 
+			en la familia, ofreciendo un ambiente afectivo, agradable y cómodo, con una atención diferencial y especializada.
+		</div>
 	</div>
 </div>
 <div id ="footer">
