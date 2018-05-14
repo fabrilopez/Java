@@ -47,10 +47,13 @@ public class RrhhController {
 	 * especificada
 	 * 
 	 * Deberá configurarse el valor de la ruta de acuerdo al sistema de archivos
+	 * c://temp// para probar en windows
+	 * 
+	 * 
 	 */
 	private void grabarFicheroALocal(FileFormBean fileFormBean) throws Exception {
 		CommonsMultipartFile uploaded = fileFormBean.getFichero();
-		String ruta = "c://temp//";
+		String ruta = "/tmp/curriculums/";
     	File localFile = new File(ruta+uploaded.getOriginalFilename());
     	FileOutputStream os = null;
     	
