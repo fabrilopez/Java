@@ -74,9 +74,9 @@
 	<div class="bloque_footer">
 	<h4>Centros</h4>
 	<ul>
-		<li><a title="Centro Cordoba" href="/iua/forms/centros#cba.html">Centro Cordoba</a>
-		<li><a title="Centro Rosario" href="/iua/forms/centros#ros.html">Centro Rosario</a>
-		<li><a title="Centro Buenos Aires" href="/iua/forms/centros#bbaa.html">Centro Buenos Aires</a>
+		<li><a title="Centro Cordoba" href="/iua/forms/centros.html#cba">Centro Cordoba</a>
+		<li><a title="Centro Rosario" href="/iua/forms/centros.html#ros">Centro Rosario</a>
+		<li><a title="Centro Buenos Aires" href="/iua/forms/centros.html#bbaa">Centro Buenos Aires</a>
 	</ul>
 	</div>
 </div>
