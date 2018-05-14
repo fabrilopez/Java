@@ -7,7 +7,8 @@
 
 <html>
 <head>
-	<title>Sanatorio IUA</title>	
+	<title>Sanatorio IUA</title>
+	<link href="<%=request.getContextPath()%>/resources/images/fav.png" rel="icon" type="image/png">	
 	<link href="<%=request.getContextPath()%>/resources/css/menu.css" rel="stylesheet" type="text/css">
 </head> 	
 <body>
@@ -85,7 +86,7 @@
 		<tr><td colspan="2" align="center"><input type="submit" value="Aceptar" class="buttonStyle" /></td></tr>
 		<tr><td>&nbsp;</td></tr>
 		<tr><td colspan="2" align="center">	
-		<a href="/iua" class="button"><span>Home</span></a></td></tr>
+		<a href="<%=request.getContextPath()%>/" class="button"><span>Home</span></a></td></tr>
 	</table>
 	</form:form>
 	</div>

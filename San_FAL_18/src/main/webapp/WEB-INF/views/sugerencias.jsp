@@ -10,6 +10,7 @@
 <html>
 <head>
 	<title>Sanatorio IUA</title>	
+	<link href="<%=request.getContextPath()%>/resources/images/fav.png" rel="icon" type="image/png">
 	<link href="<%=request.getContextPath()%>/resources/css/menu.css" rel="stylesheet" type="text/css">
 </head> 	
 <body>
@@ -43,52 +44,30 @@
 	<p>Si tiene consultas o inquietudes por favor complete el siguiente formulario y nuestro personal responderá a la brevedad.</p>
 	<img width="150" height="150" src="<%=request.getContextPath()%>/resources/images/img09.jpg" hspace="5" vspace="5" style="float: right;" />
 	
-<form:form action="sugerencias.html" method="post" >
+<form:form action="sugerencias.html">
 <table>
 		<tr><td>NOMBRE</td><td>TELEFONO</td><td>EMAIL</td></tr>
-		<tr><td>
-		<label>
-		<input type="text" placeholder="Por favor escribe tu nombre" name="name" id="name" required autofocus>
-		</label>
-		<label> 
- 		<input type="tel" placeholder="Porfavor especifica tu número de teléfono" name="telefono" id="telefono" required>
- 		</label>
-		</td></tr>
+		<tr>
+		<td><label><input type="text" placeholder="Por favor escribe tu nombre" name="name" id="name" required autofocus></label></td>
+		<td><label><input type="tel" placeholder="Porfavor especifica tu número de teléfono" name="telefono" id="telefono" required></label></td>
+ 		<td><label><input type="email" placeholder="tuemail@servidor.com" name="email" id="email" required></label></td>
+		</tr>
 		
-		
-		<tr><td>
-		<label>
-		 <span>Nombre*:</span>
-		 <input type="text" placeholder="Por favor escribe tu nombre" name="name" id="name" required autofocus>
-		 </label>
-		</td></tr>
-
-		<tr><td>
-		<label>
- 		<span>Teléfono*:</span> 
- 		<input type="tel" placeholder="Porfavor especifica tu número de teléfono" name="telefono" id="telefono" required>
- 		</label>
- 		</td></tr>
+ 		<tr><td>MENSAJE:</td></tr>
  		
- 		<tr><td>
+ 		<tr>
+ 		<td colspan="3">
  		<label>
- 		<span>Email*:</span>
- 		<input type="email" placeholder="tuemail@servidor.com" name="email" id="email" required>
+ 		<textarea id="mensaje" name="mensaje" placeholder="Tu consulta..." cols="60" rows="10"></textarea>
  		</label>
- 		</td></tr>
- 
- 		<tr><td>
- 		<label>
- 		<span>Mensaje:</span>
- 		<textarea id="mensaje" name="mensaje" placeholder="Comienza a escribir..." style="height:200px"></textarea>
- 		</label>
- 		</td></tr>
+ 		</td>
+ 		</tr>
  		
  		<tr><td>
  		<input class="sendButton" type="submit" name="Submit" value="Enviar">
 		</td></tr>
          <tr><td colspan="2" align="center">		
-		<a href="/iua" class="button"><span>Home</span></a></td></tr>
+		<a href="<%=request.getContextPath()%>/" class="button"><span>Home</span></a></td></tr>
 </table>
 </form:form>
 				

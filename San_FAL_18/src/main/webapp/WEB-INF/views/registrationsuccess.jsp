@@ -7,6 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <link href="<%=request.getContextPath()%>/resources/css/menu.css" rel="stylesheet" type="text/css">
 <title>Sanatorio IUA</title>
+<link href="<%=request.getContextPath()%>/resources/images/fav.png" rel="icon" type="image/png">
 </head>
 <body>
 

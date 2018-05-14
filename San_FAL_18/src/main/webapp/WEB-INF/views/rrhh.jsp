@@ -4,7 +4,8 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 
-<!-- PAGINA CONOZCANOS -->
+
+<!-- PAGINA DE RRHH -->
 
 <html>
 <head>
@@ -29,8 +30,8 @@
 		</p>
 		</div>
 		<ul id="nav">
-			<li class="page_item "><a title="Inicio" href="/iua">Inicio</a></li>												
-			<li class="page_item inicio actual"><a title="Quienes somos" href="/iua">Conozcanos</a></li>
+			<li class="page_item inicio actual"><a title="Inicio" href="/iua">Inicio</a></li>												
+			<li class="page_item "><a title="Quienes somos" href="/iua">Conozcanos</a></li>
 			<li class="page_item "><a title="Profesionales" href="/iua/forms/profesionales.html">Profesionales</a></li>
 			<li class="page_item "><a title="Contacto" href="/iua/forms/contacto.html">Contacto</a></li>
 			<li class="page_item "><a title="Turnos" href="/iua/forms/turnos.html">Turnos</a></li>
@@ -38,36 +39,39 @@
 		</ul>
 	</div>
 <div id="content">
-	<div class="titulo">
-		<h2>Bienvenidos al Sanatorio del Instituto Universitario Aeroautico.</h2>
-		<div class="parrafo">
-			<h3>Historia</h3>
-			<img src="<%=request.getContextPath()%>/resources/images/hospitalviejo.jpg" hspace="5" vspace="5" style="float: right;" />
-			En Sanatorio del IUA tenemos el compromiso de brindar un servicio de excelencia en la preservación de la 
-			salud de nuestros estudiantes y su familia, con principal énfasis en la mujer y el niño, en un contexto de maternidad centrada 
-			en la familia, ofreciendo un ambiente afectivo, agradable y cómodo, con una atención diferencial y especializada.
-		</div>
-		<div class="parrafo">
-			<h3>Nuestra Misión</h3>
-			<img width="170" height="170" src="<%=request.getContextPath()%>/resources/images/img06.jpg" hspace="5" vspace="5" style="float: left;" />
-			En Sanatorio del IUA tenemos el compromiso de brindar un servicio de excelencia en la preservación de la 
-			salud de nuestros estudiantes y su familia, con principal énfasis en la mujer y el niño, en un contexto de maternidad centrada 
-			en la familia, ofreciendo un ambiente afectivo, agradable y cómodo, con una atención diferencial y especializada.
-		</div>
-		<div class="parrafo">
-			<h3>Nuestra Vision</h3>
-			<img width="170" height="170" src="<%=request.getContextPath()%>/resources/images/img07.jpg" hspace="5" vspace="5" style="float: right;" />
-			En Sanatorio del IUA tenemos el compromiso de brindar un servicio de excelencia en la preservación de la 
-			salud de nuestros estudiantes y su familia, con principal énfasis en la mujer y el niño, en un contexto de maternidad centrada 
-			en la familia, ofreciendo un ambiente afectivo, agradable y cómodo, con una atención diferencial y especializada.
-		</div>
-		<div class="parrafo">
-			<h3>Nuestros valores</h3>
-			<img width="170" height="170" src="<%=request.getContextPath()%>/resources/images/img08.jpg" hspace="5" vspace="5" style="float: left;" />
-			En Sanatorio del IUA tenemos el compromiso de brindar un servicio de excelencia en la preservación de la 
-			salud de nuestros estudiantes y su familia, con principal énfasis en la mujer y el niño, en un contexto de maternidad centrada 
-			en la familia, ofreciendo un ambiente afectivo, agradable y cómodo, con una atención diferencial y especializada.
-		</div>
+	<div class="titulo">	
+	<h3>Trabaje con nosotros.</h3>
+	<p>
+	El Sanatorio IUA valora a su personal,
+	por lo cual el buen desempeño es premiado todos 
+	los meses. Al trabajar con nosotros, todos tus 
+	esfuerzos serán reconocidos! 
+	</p>
+	<img width="150" height="150" src="<%=request.getContextPath()%>/resources/images/img09.jpg" hspace="5" vspace="5" style="float: right;" />
+	
+	<c:out value="${message}"/>
+<form:form method="post" action="rrhh.html" enctype="multipart/form-data" commandName="fileFormBean">
+    <table>
+    	<tr><td>&nbsp;</td></tr>
+        <tr>
+           <td>Selecciona el archivo: </td>
+           <td><input type="file" name="fichero" /></td>
+        </tr>
+        <tr>
+    
+        </tr>
+        <tr><td>&nbsp;</td></tr>
+        <tr><td colspan="2" align="center">
+    	<input type="submit" value="Subir CV"></td>
+        </tr>
+        <tr><td>&nbsp;</td></tr>
+        <tr><td colspan="2" align="center">		
+		<a href="<%=request.getContextPath()%>/" class="button"><span>Home</span></a></td></tr>
+     </table>
+</form:form>
+	
+	
+				
 	</div>
 </div>
 <div id ="footer">

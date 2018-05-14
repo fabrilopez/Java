@@ -9,6 +9,7 @@
 <html>
 <head>
 	<title>Sanatorio IUA</title>	
+	<link href="<%=request.getContextPath()%>/resources/images/fav.png" rel="icon" type="image/png">
 	<link href="<%=request.getContextPath()%>/resources/css/menu.css" rel="stylesheet" type="text/css">
 </head> 	
 <body>
@@ -50,7 +51,7 @@
 			<img alt="" src="<%=request.getContextPath()%>/resources/images/youtubelogo.png" style="width:42px;height:42px;border:0"></a>
 			
 			<h4>Correo electrónico.</h4>
-			<a href="mailto:fabri_lopez@hotmail.com">sanatorioiua@gmail.com.ar</a>
+			<a href="mailto:sanatorioiua@gmail.com">sanatorioiua@gmail.com</a>
 			
 			<h4>O envíenos sus inquietudes.</h4>
 			+<a title="Sugerencias y Reglamos" href="/iua/forms/sugerencias.html">Sugerencias y reclamos</a> 

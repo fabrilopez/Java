@@ -7,8 +7,9 @@
 <!-- PAGINA DE INICIO -->
 
 <html>
-<head>
-	<title>Sanatorio IUA</title>	
+<head>  
+	<title>Sanatorio IUA</title>
+	<link href="<%=request.getContextPath()%>/resources/images/fav.png" rel="icon" type="image/png">	
 	<link href="<%=request.getContextPath()%>/resources/css/menu.css" rel="stylesheet" type="text/css">
 </head> 	
 <body>
