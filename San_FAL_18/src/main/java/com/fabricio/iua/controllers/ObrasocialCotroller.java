@@ -5,6 +5,7 @@ import java.util.List;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
@@ -24,6 +25,7 @@ public class ObrasocialCotroller {
 	/*
      * This method will list all existing obras sociales
      */
+	@Secured({"ROLE_USER","ROLE_ADMIN"})
 	@RequestMapping(value = { "/obras.html" }, method = RequestMethod.GET)
 	public String showForm(ModelMap model) {
 		List<Obrasocial> obrassociales = obrasocialService.listObrassociales();
@@ -34,6 +36,7 @@ public class ObrasocialCotroller {
 	/*
      * This method will provide the medium to add a new obra social.
      */
+	@Secured("ROLE_ADMIN")
     @RequestMapping(value = { "/newobrasocial.html" }, method = RequestMethod.GET)
     public String newObrasocial(ModelMap model) {
     	Obrasocial obrasocial = new Obrasocial();
@@ -61,6 +64,7 @@ public class ObrasocialCotroller {
     /*
      * This method will delete an obra social by it's os_id value.
      */
+    @Secured("ROLE_ADMIN")
     @RequestMapping(value = { "/delete-{os_id}-obrasocial" }, method = RequestMethod.GET)
     public String deleteObrasocial(@PathVariable String os_id) {
     	long l = Long.parseLong(os_id);

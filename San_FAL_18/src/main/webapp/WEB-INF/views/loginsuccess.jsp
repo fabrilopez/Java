@@ -36,7 +36,7 @@
 	<tr><td>&nbsp;</td></tr>
 	<tr align="center">
 		<td colspan="2" align="center">
-		<a href="loginform.html" class="button"><span>Logout</span></a>
+		<a href="<core:url value="/j_spring_security_logout" />" class="button"><span>Logout</span></a>
 		<a href="/iua" class="button"><span>Inicio</span></a></td>									
 	</tr>
 </table>

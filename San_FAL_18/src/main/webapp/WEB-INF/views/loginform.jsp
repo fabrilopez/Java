@@ -8,7 +8,7 @@
 <title>Sanatorio IUA</title>
 </head>
 <body>
-<form:form action="loginform.html"  commandName="loginForm">
+<form:form action="loginform.html"  commandName="loginForm" >
 	<table align="center">
 		<tr><td colspan="2" align="center"><h3>Inicio de sesion</h3></td></tr>
 		<tr><td colspan="2" ><FONT color="red"><form:errors path="generalErrors" /></FONT></td></tr>

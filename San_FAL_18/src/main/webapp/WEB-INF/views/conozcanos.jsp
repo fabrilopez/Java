@@ -34,7 +34,7 @@
 			<li class="page_item "><a title="Profesionales" href="/iua/forms/profesionales.html">Profesionales</a></li>
 			<li class="page_item "><a title="Contacto" href="/iua/forms/contacto.html">Contacto</a></li>
 			<li class="page_item "><a title="Turnos" href="/iua/forms/turnos.html">Turnos</a></li>
-			<li class="page_item "><a title="Inicio de sesion" href="/iua/forms/loginform.html">Ingreso</a></li>
+			<li class="page_item "><a title="Inicio de sesion" href="/iua/spring_security_login">Ingreso</a></li>
 		</ul>
 	</div>
 <div id="content">

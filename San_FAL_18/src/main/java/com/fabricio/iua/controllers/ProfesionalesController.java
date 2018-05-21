@@ -6,6 +6,7 @@ import java.util.List;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
@@ -30,6 +31,7 @@ public class ProfesionalesController {
 	/*
      * This method will list all existing especialidades y profesionales.
      */
+	@Secured({"ROLE_USER","ROLE_ADMIN"})
 	@RequestMapping(value = { "/profesionales.html" }, method =RequestMethod.GET)
 	public String showForm(ModelMap model) {
 		List<Especialidad> especialidades = especialidadService.listEspecialidades();
@@ -42,6 +44,7 @@ public class ProfesionalesController {
 	/*
      * This method will provide the medium to add a new especialidad.
      */
+	@Secured("ROLE_ADMIN")
     @RequestMapping(value = { "/newespecialidad.html" }, method = RequestMethod.GET)
     public String newEspecialidad(ModelMap model) {
         Especialidad especialidad = new Especialidad();
@@ -53,6 +56,7 @@ public class ProfesionalesController {
     /*
      * This method will provide the medium to add a new profesional.
      */
+    @Secured("ROLE_ADMIN")
     @RequestMapping(value = { "/newprofesional.html" }, method = RequestMethod.GET)
     public String newProfesional(ModelMap model) {
     	List<Especialidad> especialidades = especialidadService.listEspecialidades();
@@ -98,6 +102,7 @@ public class ProfesionalesController {
     /*
      * This method will delete an especialidad by it's especialidad_id value.
      */
+    @Secured("ROLE_ADMIN")
     @RequestMapping(value = { "/delete-{especialidad_id}-especialidad" }, method = RequestMethod.GET)
     public String deleteEspecialidad(@PathVariable String especialidad_id) {
     	long l = Long.parseLong(especialidad_id);
@@ -108,6 +113,7 @@ public class ProfesionalesController {
     /*
      * This method will delete an profesional by it's especialidad_id value.
      */
+    @Secured("ROLE_ADMIN")
     @RequestMapping(value = { "/delete-{profesional_id}-profesional" }, method = RequestMethod.GET)
     public String deleteProfesional(@PathVariable String profesional_id) {
     	long l = Long.parseLong(profesional_id);

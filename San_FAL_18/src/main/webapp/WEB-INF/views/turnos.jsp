@@ -35,7 +35,7 @@
 			<li class="page_item "><a title="Profesionales" href="/iua/forms/profesionales.html">Profesionales</a></li>
 			<li class="page_item "><a title="Contacto" href="/iua/forms/contacto.html">Contacto</a></li>
 			<li class="page_item inicio actual"><a title="Turnos" href="/iua/forms/turnos.html">Turnos</a></li>
-			<li class="page_item "><a title="Inicio de sesion" href="/iua/forms/loginform.html">Ingreso</a></li>
+			<li class="page_item "><a title="Inicio de sesion" href="/iua/spring_security_login">Ingreso</a></li>
 		</ul>
 	</div>
 	<div id="content">
@@ -47,7 +47,7 @@
 	<tr><td colspan="3">
         	<tr><td colspan="2" align="center"><h3>Paciente registrado</h3></td></tr>
 			<tr><td>&nbsp;</td></tr>
-			<tr><td>DNI:</td><td><form:input path="paciente.dni" /></td></tr>
+			<tr><td>DNI:</td><td><form:input type="number" path="paciente.dni" /></td></tr>
 			<tr><td>&nbsp;</td></tr>                    
 			<tr><td colspan="2" align="center"><input type="submit" value="Continuar" class="buttonStyle" /></td></tr>
 			<tr><td>&nbsp;</td></tr>                            

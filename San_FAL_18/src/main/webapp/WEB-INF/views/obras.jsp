@@ -19,13 +19,12 @@
 	<h3>Lista de Obras Sociales</h3>
     <table id="tabla">
         <tr>
-            <td><b>ID</b></td><td><b>NOMBRE</b></td><td><b>EDITAR</b></td><td><b>BORRAR</b></td>
+            <td><b>ID</b></td><td><b>NOMBRE</b></td><td><b>BORRAR</b></td>
         </tr>
       <c:forEach items="${obrassociales}" var="obrasocial">
             <tr>
             <td>${obrasocial.os_id}</td>
-            <td>${obrasocial.nombre}</td>
-            <td><a href="<c:url value='/forms/edit-${obrasocial.os_id}-obrasocial' />">${obrasocial.os_id}</a></td>
+            <td>${obrasocial.nombre}</td>            
             <td><a href="<c:url value='/forms/delete-${obrasocial.os_id}-obrasocial' />">Borrar</a></td>
             </tr>
         </c:forEach>
