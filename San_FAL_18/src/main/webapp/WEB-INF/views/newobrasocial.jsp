@@ -15,7 +15,7 @@
     	<form:input type="hidden" path="os_id" id="os_id"/>
         <table align="center">
         <tr><td colspan="2" align="center"><h3>Agregar Obra Social</h3></td></tr> 
-        <tr><td><label for="nombre">Nombre de la nueva obra social: </label></td><td><form:input path="nombre" id="nombre"/></td></tr>
+        <tr><td><label for="nombre">Nombre de la nueva obra social: </label></td><td><form:input type="text" path="nombre" id="nombre" maxlength="50"/></td></tr>
         <tr><td colspan="3">
                     <c:choose>
                         <c:when test="${edit}">

@@ -15,12 +15,12 @@
 <form:input type="hidden" path="paciente_id" id="paciente_id"/>
 <table align="center">
 <tr><td colspan="2" align="center"><h3>Agregar paciente</h3></td></tr>
-		<tr><td><label for="dni">DNI: </label></td>							<td><form:input path="dni" id="dni"/></td></tr>
-		<tr><td><label for="nombre">Nombre: </label></td>					<td><form:input path="nombre" id="nombre"/></td></tr>
-        <tr><td><label for="apellido">Apellido: </label></td>				<td><form:input path="apellido" id="apellido"/></td></tr>
-        <tr><td><label for="email">E-mail: </label></td>					<td><form:input path="email" id="email"/></td></tr>
-        <tr><td><label for="telefono">Telefono: </label></td>					<td><form:input path="telefono" id="telefono"/></td></tr>
-        <tr><td><label for="direccion">Direccion: </label></td>					<td><form:input path="direccion" id="direccion"/></td></tr>
+		<tr><td><label for="dni">DNI: </label></td>				<td><form:input type="number" path="dni" id="dni" min="2000000" max="99999999" placeholder="su dni"/></td></tr>
+		<tr><td><label for="nombre">Nombre: </label></td>		<td><form:input type="text" path="nombre" id="nombre" maxlength="50" placeholder="su nombre"/></td></tr>
+        <tr><td><label for="apellido">Apellido: </label></td>	<td><form:input type="text" path="apellido" id="apellido" maxlength="50" placeholder="su apellido"/></td></tr>
+        <tr><td><label for="email">E-mail: </label></td>		<td><form:input type="email" path="email" id="email" placeholder="su e-mail"/></td></tr>
+        <tr><td><label for="telefono">Telefono: </label></td>	<td><form:input type="tel" path="telefono" id="telefono" min="99999" max="999999999" placeholder="su telefono"/></td></tr>
+        <tr><td><label for="direccion">Direccion: </label></td>	<td><form:input type="text" path="direccion" id="direccion" maxlength="50" placeholder="su direccion"/></td></tr>
         
         <tr>
         <td><label for="os_id">Obra Social :</label></td>

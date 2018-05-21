@@ -16,9 +16,9 @@
     	<form:input type="hidden" path="profesional_id" id="profesional_id"/>
         <table align="center">
         <tr><td colspan="2" align="center"><h3>Agregar profesional</h3></td></tr> 
-        <tr><td><label for="nombre">Nombre: </label></td>					<td><form:input path="nombre" id="nombre"/></td></tr>
-        <tr><td><label for="apellido">Apellido: </label></td>				<td><form:input path="apellido" id="apellido"/></td></tr>
-        <tr><td><label for="email">E-mail: </label></td>					<td><form:input path="email" id="email"/></td></tr>        
+        <tr><td><label for="nombre">Nombre: </label></td>		<td><form:input type="text" path="nombre" id="nombre" maxlength="50" placeholder="su nombre"/></td></tr>
+        <tr><td><label for="apellido">Apellido: </label></td>	<td><form:input type="text" path="apellido" id="apellido" maxlength="50" placeholder="su apellido"/></td></tr>
+        <tr><td><label for="email">E-mail: </label></td>		<td><form:input type="email" path="email" id="email" placeholder="su e-mail"/></td></tr>        
         
         <tr>
         <td><label for="especialidad_id">Especialidad :</label></td>

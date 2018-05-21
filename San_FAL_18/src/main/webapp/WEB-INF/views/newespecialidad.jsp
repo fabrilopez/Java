@@ -15,7 +15,7 @@
     	<form:input type="hidden" path="especialidad_id" id="especialidad_id"/>
         <table align="center">
         <tr><td colspan="2" align="center"><h3>Agregar especialidad</h3></td></tr> 
-        <tr><td><label for="nombre">Nombre de la nueva especialidad: </label></td><td><form:input path="nombre" id="nombre"/></td></tr>
+        <tr><td><label for="nombre">Nombre de la nueva especialidad: </label></td><td><form:input type="text" path="nombre" id="nombre" maxlength="50" placeholder="especialidad.."/></td></tr>
         <tr><td colspan="3">
                     <c:choose>
                         <c:when test="${edit}">

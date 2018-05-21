@@ -23,9 +23,8 @@
 			
 		</div>
 		<div id="usuario">
-		<p>Bienvenido: 
-		<core:out value="${loginForm.userName}" />
-		</p>
+		<p>Bienvenido:<core:out value="  ${username}" /></p>
+			<a href="<core:url value="/j_spring_security_logout" />" ><span>Logout</span></a>
 		</div>
 		<ul id="nav">
 			<li class="page_item "><a title="Inicio" href="/iua">Inicio</a></li>												

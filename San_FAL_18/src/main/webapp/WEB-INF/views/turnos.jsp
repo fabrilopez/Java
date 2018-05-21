@@ -25,9 +25,8 @@
 		<script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/fecha.js"></script>			
 		</div>
 		<div id="usuario">
-		<core:if test="${loginForm.userName!=null}">
-			<p>Bienvenido:<core:out value="  ${loginForm.userName}" /></p>
-		</core:if>
+		<p>Bienvenido:<core:out value="  ${username}" /></p>
+			<a href="<core:url value="/j_spring_security_logout" />" ><span>Logout</span></a>
 		</div>
 		<ul id="nav">
 			<li class="page_item "><a title="Inicio" href="/iua">Inicio</a></li>												
@@ -47,7 +46,7 @@
 	<tr><td colspan="3">
         	<tr><td colspan="2" align="center"><h3>Paciente registrado</h3></td></tr>
 			<tr><td>&nbsp;</td></tr>
-			<tr><td>DNI:</td><td><form:input type="number" path="paciente.dni" /></td></tr>
+			<tr><td>DNI:</td><td><form:input type="number" path="paciente.dni" min="2000000" max="99999999" placeholder="su dni"/></td></tr>
 			<tr><td>&nbsp;</td></tr>                    
 			<tr><td colspan="2" align="center"><input type="submit" value="Continuar" class="buttonStyle" /></td></tr>
 			<tr><td>&nbsp;</td></tr>                            
