@@ -32,7 +32,7 @@
     </table>    
     <br/>
     <a href="<c:url value='/forms/newobrasocial.html' />" class="button"><span>Agregar Obra Social</span></a>	      
-    <a href="<c:url value='/' />" class="button"><span>Inicior</span></a>
+    <a href="<c:url value='/' />" class="button"><span>Inicio</span></a>
 </div>
 </div>        
 </div>

@@ -15,7 +15,7 @@
 <tr><td colspan="2" align="center"><h3>Mensaje: ${success}</h3></td></tr>
 <tr><td>&nbsp;</td></tr>
 <tr><td colspan="2" align="center">
-<a href="/iua" class="button"><span>Home</span></a></td></tr>		
+<a href="/iua" class="button"><span>Inicio</span></a></td></tr>		
 </table>    
 </body>
 </html>

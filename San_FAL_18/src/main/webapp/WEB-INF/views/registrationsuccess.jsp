@@ -25,7 +25,7 @@
 	<tr>
 		<td colspan="2" align="center" >
 		<a href="loginform.html" class="button"><span>Volver</span></a>
-		<a href="/iua" class="button"><span>Home</span></a>		
+		<a href="/iua" class="button"><span>Inicio</span></a>		
 	</tr>
 </table>
 
