@@ -25,9 +25,9 @@
 		<script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/fecha.js"></script>			
 		</div>
 		<div id="usuario">
-		<p>Bienvenido: 
-		<core:out value="${loginForm.userName}" />
-		</p>
+		<core:if test="${loginForm.userName!=null}">
+			<p>Bienvenido:<core:out value="  ${loginForm.userName}" /></p>
+		</core:if>
 		</div>
 		<ul id="nav">
 			<li class="page_item inicio actual"><a title="Inicio" href="/iua">Inicio</a></li>												

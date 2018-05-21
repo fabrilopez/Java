@@ -4,6 +4,8 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 
+<!-- PAGINA DE LISTA DE OBRAS SOCIALES -->
+
 <html>
 <head>
 	<title>Sanatorio IUA</title>	
@@ -30,7 +32,7 @@
     </table>    
     <br/>
     <a href="<c:url value='/forms/newobrasocial.html' />" class="button"><span>Agregar Obra Social</span></a>	      
-    <a href="<c:url value='/' />" class="button"><span>Volver</span></a>
+    <a href="<c:url value='/' />" class="button"><span>Inicior</span></a>
 </div>
 </div>        
 </div>

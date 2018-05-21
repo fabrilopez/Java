@@ -5,6 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link href="<%=request.getContextPath()%>/resources/images/fav.png" rel="icon" type="image/png">
 <link href="<%=request.getContextPath()%>/resources/css/menu.css" rel="stylesheet" type="text/css">
 <title>Sanatorio IUA</title>
 </head>
@@ -36,7 +37,7 @@
 	<tr align="center">
 		<td colspan="2" align="center">
 		<a href="loginform.html" class="button"><span>Logout</span></a>
-		<a href="/iua" class="button"><span>Home</span></a></td>									
+		<a href="/iua" class="button"><span>Inicio</span></a></td>									
 	</tr>
 </table>
 </body>

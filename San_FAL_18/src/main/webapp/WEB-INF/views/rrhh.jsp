@@ -66,7 +66,7 @@
         </tr>
         <tr><td>&nbsp;</td></tr>
         <tr><td colspan="2" align="center">		
-		<a href="<%=request.getContextPath()%>/" class="button"><span>Home</span></a></td></tr>
+		<a href="<%=request.getContextPath()%>/" class="button"><span>Inicio</span></a></td></tr>
      </table>
 </form:form>
 	

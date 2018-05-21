@@ -22,15 +22,15 @@
 <div id="header">
 		<div id="headerimg">
 			<a title="Sanatorio.com" href="/iua" >
-				<img width="172" height="114" alt="Sanatorio.com" src="/iua" border="0"></a>
+				<img width="180" height="90" src="<%=request.getContextPath()%>/resources/images/logosan.png" alt="Sanatorio.com" src="/iua" border="0"></a>
 		</div>
 		<div id="fecha">
 		<script type="text/javascript" src="<%=request.getContextPath()%>/resources/js/fecha.js"></script>			
 		</div>
 		<div id="usuario">
-		<p>Bienvenido: 
-		<core:out value="${loginForm.userName}" />
-		</p>
+		<core:if test="${loginForm.userName!=null}">
+			<p>Bienvenido:<core:out value="  ${loginForm.userName}" /></p>
+		</core:if>
 		</div>
 		<ul id="nav">
 			<li class="page_item "><a title="Inicio" href="/iua">Inicio</a></li>												
@@ -86,7 +86,7 @@
 		<tr><td colspan="2" align="center"><input type="submit" value="Aceptar" class="buttonStyle" /></td></tr>
 		<tr><td>&nbsp;</td></tr>
 		<tr><td colspan="2" align="center">	
-		<a href="<%=request.getContextPath()%>/" class="button"><span>Home</span></a></td></tr>
+		<a href="<%=request.getContextPath()%>/" class="button"><span>Inicio</span></a></td></tr>
 	</table>
 	</form:form>
 	</div>
