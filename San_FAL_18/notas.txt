@@ -158,3 +158,10 @@ database.user=root
 database.password=1234
 hibernate.dialect=org.hibernate.dialect.MySQL5Dialect
 hibernate.show_sql=true
+
+database.driver=com.mysql.jdbc.Driver
+database.url=jdbc:mysql://node16668-sanatorio.jelastic.saveincloud.net/sanatorio
+database.user=root
+database.password=HHSpqh45756
+hibernate.dialect=org.hibernate.dialect.MySQL5Dialect
+hibernate.show_sql=true

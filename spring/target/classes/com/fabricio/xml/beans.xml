@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="persona" class="com.fabricio.beans.Persona">
+		<property name="pais" ref="pais"></property>
+		<property name="id" value="1"></property>
+		<property name="nombre" value="Fabricio"></property>
+		<property name="apodo" value="Corcho"></property>		
+	</bean>
+		
+	<bean id="pais" class="com.fabricio.beans.Pais">
+		<property name="nombre" value="Argentina"></property>
+		<property name="ciudad" ref="ciudad"></property>
+	</bean>
+	
+	<bean id="ciudad" class="com.fabricio.beans.Ciudad">
+		<property name="nombre" value="Rosario"></property>
+	</bean>
+
+</beans>
